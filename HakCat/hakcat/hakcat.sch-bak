@@ -1,0 +1,258 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW5
+U 1 1 61080C78
+P 7650 2050
+F 0 "SW5" H 7650 2335 50  0001 C CNN
+F 1 "A" H 7650 2244 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 2250 50  0001 C CNN
+F 3 "~" H 7650 2250 50  0001 C CNN
+	1    7650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3650 7850 4050
+Connection ~ 7850 4050
+$Comp
+L Switch:SW_Push SW2
+U 1 1 6107FC58
+P 7650 4050
+F 0 "SW2" H 7650 4335 50  0001 C CNN
+F 1 "Down" H 7650 4244 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 4250 50  0001 C CNN
+F 3 "~" H 7650 4250 50  0001 C CNN
+	1    7650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6107F0D4
+P 7650 3650
+F 0 "SW1" H 7650 3935 50  0001 C CNN
+F 1 "Up" H 7650 3844 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 3850 50  0001 C CNN
+F 3 "~" H 7650 3850 50  0001 C CNN
+	1    7650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4450 7850 4900
+Wire Wire Line
+	7850 4050 7850 4450
+Connection ~ 7850 4450
+$Comp
+L Switch:SW_Push SW3
+U 1 1 610800B0
+P 7650 4450
+F 0 "SW3" H 7650 4735 50  0001 C CNN
+F 1 "Left" H 7650 4644 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 4650 50  0001 C CNN
+F 3 "~" H 7650 4650 50  0001 C CNN
+	1    7650 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 61080994
+P 7650 4900
+F 0 "SW4" H 7650 5185 50  0001 C CNN
+F 1 "Right" H 7650 5094 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 5100 50  0001 C CNN
+F 3 "~" H 7650 5100 50  0001 C CNN
+	1    7650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 61080505
+P 7650 2450
+F 0 "SW6" H 7650 2735 50  0001 C CNN
+F 1 "B" H 7650 2644 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7650 2650 50  0001 C CNN
+F 3 "~" H 7650 2650 50  0001 C CNN
+	1    7650 2450
+	1    0    0    -1  
+$EndComp
+Text Label 7200 4050 0    50   ~ 0
+D0
+Wire Wire Line
+	7450 4450 7200 4450
+Text Label 7200 3650 0    50   ~ 0
+D6
+Text Label 7200 4450 0    50   ~ 0
+D7
+Text Label 7200 4900 0    50   ~ 0
+D5
+Wire Wire Line
+	7450 4900 7200 4900
+$Comp
+L Device:R_US R1
+U 1 1 6113A66D
+P 6950 4050
+F 0 "R1" V 7155 4050 50  0001 C CNN
+F 1 "10K" V 7063 4050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6990 4040 50  0001 C CNN
+F 3 "~" H 6950 4050 50  0001 C CNN
+	1    6950 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7100 4050 7450 4050
+Wire Wire Line
+	7450 3650 7200 3650
+Wire Wire Line
+	6600 4050 6600 3950
+Wire Wire Line
+	6600 4050 6800 4050
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 611461F2
+P 6600 3950
+F 0 "#PWR0101" H 6600 3800 50  0001 C CNN
+F 1 "+3V3" H 6615 4123 50  0000 C CNN
+F 2 "" H 6600 3950 50  0001 C CNN
+F 3 "" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61146F57
+P 7850 5150
+F 0 "#PWR0102" H 7850 4900 50  0001 C CNN
+F 1 "GND" H 7855 4977 50  0000 C CNN
+F 2 "" H 7850 5150 50  0001 C CNN
+F 3 "" H 7850 5150 50  0001 C CNN
+	1    7850 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4900 7850 5150
+Connection ~ 7850 4900
+Wire Wire Line
+	7850 2050 7850 2450
+Wire Wire Line
+	7450 2450 7200 2450
+Wire Wire Line
+	7450 2050 7200 2050
+Text Label 7200 2050 0    50   ~ 0
+D4
+Text Label 7200 2450 0    50   ~ 0
+D3
+Wire Wire Line
+	7850 2450 7850 3650
+Connection ~ 7850 2450
+Connection ~ 7850 3650
+Wire Wire Line
+	4800 2850 4450 2850
+Wire Wire Line
+	4450 2850 4450 3200
+Wire Wire Line
+	4100 3200 4450 3200
+Wire Wire Line
+	4800 2950 4350 2950
+Wire Wire Line
+	4350 2950 4350 3100
+Wire Wire Line
+	4350 3100 4100 3100
+Wire Wire Line
+	4100 3800 4800 3800
+Wire Wire Line
+	4800 3050 4550 3050
+Wire Wire Line
+	4550 3050 4550 3500
+Wire Wire Line
+	4550 3500 5100 3500
+Wire Wire Line
+	4800 3150 4650 3150
+Wire Wire Line
+	4550 3050 4550 2450
+Wire Wire Line
+	4550 2450 3800 2450
+Wire Wire Line
+	3800 2450 3800 2600
+Connection ~ 4550 3050
+$Comp
+L LED:WS2812B D1
+U 1 1 6108AA06
+P 5100 3800
+F 0 "D1" H 5444 3846 50  0001 L CNN
+F 1 "WS2812B" H 5444 3755 50  0000 L TNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 5150 3500 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 5200 3425 50  0001 L TNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:WeMos_D1_mini U1
+U 1 1 6107D786
+P 3700 3400
+F 0 "U1" H 3700 2511 50  0001 C CNN
+F 1 "WeMos D1 Mini" H 3700 2420 50  0000 C CNN
+F 2 "wemos-d1-mini:wemos-d1-mini-with-pin-header-and-connector" H 3700 2250 50  0001 C CNN
+F 3 "https://wiki.wemos.cc/products:d1:d1_mini#documentation" H 1850 2250 50  0001 C CNN
+	1    3700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 4200 4650 4200
+Wire Wire Line
+	5100 4100 5100 4200
+Wire Wire Line
+	4650 3150 4650 4200
+Connection ~ 4650 4200
+Wire Wire Line
+	4650 4200 5100 4200
+$Comp
+L SSD1306-128x64_OLED:SSD1306 Brd1
+U 1 1 6108DD59
+P 5150 3000
+F 0 "Brd1" H 5428 3104 50  0001 L CNN
+F 1 "SH1106" V 5428 3013 50  0000 C CNN
+F 2 "screens:SH1106-128x64-OLED" H 5150 3250 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+	1    5150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61192F70
+P 5100 4400
+F 0 "#PWR0103" H 5100 4150 50  0001 C CNN
+F 1 "GND" H 5105 4227 50  0000 C CNN
+F 2 "" H 5100 4400 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4200 5100 4400
+Connection ~ 5100 4200
+$Comp
+L power:+5V #PWR0104
+U 1 1 61196773
+P 3600 2250
+F 0 "#PWR0104" H 3600 2100 50  0001 C CNN
+F 1 "+5V" H 3615 2423 50  0000 C CNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2250 3600 2600
+$EndSCHEMATC
